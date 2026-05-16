@@ -1,4 +1,25 @@
+import { useEffect, useRef, useState } from 'react'
+
 function Navbar() {
+  const [expanded, setExpanded] = useState(false)
+  const collapseRef = useRef(null)
+
+  useEffect(() => {
+    const collapseEl = collapseRef.current
+    if (!collapseEl) return
+
+    const handleShown = () => setExpanded(true)
+    const handleHidden = () => setExpanded(false)
+
+    collapseEl.addEventListener('shown.bs.collapse', handleShown)
+    collapseEl.addEventListener('hidden.bs.collapse', handleHidden)
+
+    return () => {
+      collapseEl.removeEventListener('shown.bs.collapse', handleShown)
+      collapseEl.removeEventListener('hidden.bs.collapse', handleHidden)
+    }
+  }, [])
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
       <div className="container">
@@ -12,11 +33,19 @@ function Navbar() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded={expanded}
+          aria-label="Toggle navigation"
+          onClick={() => setExpanded((prev) => !prev)}
         >
-          <span className="navbar-toggler-icon"></span>
+          {expanded ? (
+            <i className="bi bi-x-lg text-white" aria-hidden="true"></i>
+          ) : (
+            <span className="navbar-toggler-icon"></span>
+          )}
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse" id="navbarNav" ref={collapseRef}>
 
           <ul className="navbar-nav ms-auto gap-lg-3 text-center">
 
