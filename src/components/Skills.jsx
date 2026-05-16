@@ -76,7 +76,7 @@ function Skills() {
             >
 
               <div
-                className={`skill-category-card text-center ${activeIndex === index ? 'active' : ''}`}
+                className="skill-category-card text-center"
                 onClick={() => setActiveIndex(index)}
               >
 

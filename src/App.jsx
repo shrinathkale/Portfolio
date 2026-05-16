@@ -7,13 +7,15 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
+import Experience from "./components/Experience"
+import Certifications from "./components/Certifications"
 
 import './App.css'
 
 function App() {
   useEffect(() => {
     const targets = document.querySelectorAll(
-      '.page-section, .hero-section, .glass-card, .skill-category-card, .skill-card, .project-card, .education-card, .achievement-card, .contact-item, .social-icon, .btn.hero-btn'
+      '.page-section, .hero-section, .glass-card, .skill-category-card, .skill-card, .project-card, .education-card, .achievement-card, .experience-card, .certification-card, .contact-item, .social-icon, .btn.hero-btn'
     )
 
     const observer = new IntersectionObserver(
@@ -41,6 +43,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Experience />
+      <Certifications />
       <Education />
       <Achievements />
       <Contact />
