@@ -65,7 +65,7 @@ function Contact() {
             {/* Left Side - Contact Form */}
             <div className="col-lg-7">
 
-              <h2 className="contact-heading mb-4">
+              <h2 className="card-title contact-heading mb-4">
                 Get In Touch
               </h2>
 
@@ -162,7 +162,7 @@ function Contact() {
 
               <div className="contact-details">
 
-                <h2 className="contact-heading mb-4">
+                <h2 className="card-title contact-heading mb-4">
                   Contact Information
                 </h2>
 
