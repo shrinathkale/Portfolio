@@ -4,7 +4,9 @@ function Achievements() {
     'Cummins Scholar of Cummins Technologies India (2024-25)',
     'Second Runner-Up in AI Visionaries Competition',
     'Scored 83 in NPTEL Machine Learning using Python',
-    'Participated in DeepTech National Hackathon Grand Finale'
+    'Participated in various hackathons and technical competitions',
+    'Checkmarx Codebashing Security Course Certified',
+    'Student Co-ordinator of Godrej Infotech Centum Foundation’s Data Analysis Course'
   ]
 
   return (

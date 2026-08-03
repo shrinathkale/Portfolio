@@ -3,13 +3,33 @@ function Projects() {
   const projects = [
 
     {
-      title: "Medical Radiographic Image Analyzer",
+      title: "Online Shopping System",
       description:
-        "AI-based system that predicts whether an organ in a radiographic image is defective using Deep Learning techniques.",
+        "A mini e-commerce web application with customer authentication, product management, shopping cart, selective checkout, order processing, and automatic stock management.",
       tech:
-        "Python, Flask, HTML, CSS, JavaScript, Deep Learning",
+        "C#, ASP.NET Core MVC, ADO.NET, SQL Server, HTML, CSS, Bootstrap, JavaScript",
       github:
-        "https://github.com/shrinathkale/Medical_radiographic_image_analyzer"
+        "https://github.com/shrinathkale/Online_shopping_system"
+    },
+
+    {
+      title: "Guest House Management System",
+      description:
+        "Full-stack web application for room-wise guest record management and administration.",
+      tech:
+        "HTML, CSS, JavaScript, MongoDB, NodeJS",
+      github:
+        "https://github.com/shrinathkale/Guest_house_management_system"
+    },
+
+    {
+      title: "Rental Home Management",
+      description:
+        "Web-based rental home management platform for handling property listings and tenant details.",
+      tech:
+        "HTML, CSS, JavaScript, Django, MySQL",
+      github:
+        "https://github.com/shrinathkale/Rental_home_management"
     },
 
     {
@@ -23,13 +43,13 @@ function Projects() {
     },
 
     {
-      title: "Guest House Management System",
+      title: "Medical Radiographic Image Analyzer",
       description:
-        "Full-stack web application for room-wise guest record management and administration.",
+        "AI-based system that predicts whether an organ in a radiographic image is defective using Deep Learning techniques.",
       tech:
-        "HTML, CSS, JavaScript, MongoDB, NodeJS",
+        "Python, Flask, HTML, CSS, JavaScript, Deep Learning",
       github:
-        "https://github.com/shrinathkale/Guest_house_management_system"
+        "https://github.com/shrinathkale/Medical_radiographic_image_analyzer"
     },
 
     {
@@ -50,16 +70,6 @@ function Projects() {
         "Python, Machine Learning, Data Analysis",
       github:
         "https://github.com/shrinathkale/Dermatology_project"
-    },
-
-    {
-      title: "Rental Home Management",
-      description:
-        "Web-based rental home management platform for handling property listings and tenant details.",
-      tech:
-        "HTML, CSS, JavaScript, Django, MySQL",
-      github:
-        "https://github.com/shrinathkale/Rental_home_management"
     },
 
     {
@@ -98,6 +108,18 @@ function Projects() {
                 <p className="tech-stack mt-4">
                   <strong>Tech Used:</strong> {project.tech}
                 </p>
+
+                <div className="mt-3">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-dark"
+                  >
+                    <i className="bi bi-github me-2"></i>
+                    View on GitHub
+                  </a>
+                </div>
 
               </div>
             </div>

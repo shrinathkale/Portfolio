@@ -3,7 +3,7 @@ function Home() {
 
     <section
       id="home"
-      className="hero-section d-flex align-items-center"
+      className="hero-section d-flex align-items-center" 
     >
 
       <div className="container text-center">

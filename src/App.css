@@ -59,19 +59,24 @@ body {
 .page-section,
 .hero-section,
 .glass-card,
-.skill-category-card,
-.skill-card,
 .project-card,
 .education-card,
 .achievement-card,
-.experience-card,
-.certification-card,
 .contact-item,
 .social-icon {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   will-change: opacity, transform;
+}
+
+.skill-category-card,
+.skill-card,
+.experience-card,
+.certification-card {
+  opacity: 1;
+  transform: none;
+  transition: 0.3s ease;
 }
 
 .animate-visible {
@@ -398,6 +403,47 @@ body {
   color: #d1d5db;
   line-height: 1.7;
   font-size: 0.95rem;
+}
+
+.experience-certificate-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #38bdf8;
+  color: #08111d;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.experience-certificate-link:hover {
+  background: #7dd3fc;
+  transform: translateY(-2px);
+  color: #08111d;
+}
+
+.certification-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #0ea5e9;
+  color: #f8fafc;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.certification-link:hover {
+  background: #38bdf8;
+  color: #08111d;
+  transform: translateY(-2px);
 }
 
 .card-title {

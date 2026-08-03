@@ -16,14 +16,14 @@ function Education() {
           </p>
 
           <p>
-            Current CGPA : 9.38
+            CGPA : 9.37 / Percentage : 86.2%
           </p>
 
         </div>
 
         <div className="education-card mt-4">
 
-          <h3 className="card-title">Higher Secondary School (2023)</h3>
+          <h3 className="card-title">Higher Secondary School (12th) (2023)</h3>
 
           <p>
             Sharda Junior College Rahata
@@ -37,7 +37,7 @@ function Education() {
 
         <div className="education-card mt-4">
 
-          <h3 className="card-title">Secondary School (2021)</h3>
+          <h3 className="card-title">Secondary School (10th) (2021)</h3>
 
           <p>
             Shri Shivaji Highschool Bodhegaon

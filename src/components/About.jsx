@@ -32,15 +32,15 @@ function About() {
             <div className="col-md-8">
 
               <p>
-                I am an Information Technology Engineering student at Amrutvahini College of Engineering with a strong interest in Web Development, Machine Learning, and Artificial Intelligence.
+                I am an Information Technology Engineering student at Amrutvahini College of Engineering with a strong interest in Java(DSA), C#, Web Development, Machine Learning, and Artificial Intelligence.
               </p>
 
               <p>
-                I enjoy building real-world projects using technologies like MERN Stack, HTML, CSS, JavaScript, Python, and Django.
+                I enjoy building real-world projects using technologies like MERN Stack, .NET (C#), HTML, CSS, JavaScript, Python, and Django.
               </p>
 
               <p>
-                I have worked on AI-based healthcare and prediction systems, along with full-stack web applications. I am also a Cummins Scholar and have participated in national-level hackathons and technical competitions.
+                I have worked on AI-based healthcare and prediction systems, along with full-stack web applications using technologies like MERN, .NET (C#). I am also a Cummins Scholar and have participated in national-level hackathons and technical competitions.
               </p>
 
               <p>

@@ -27,9 +27,12 @@ function Skills() {
       icon: <FaServer />,
       skills: [
         "NodeJS",
+        "ExpressJS",
         "Django",
+        ".NET",
         "MongoDB",
-        "MySQL"
+        "MySQL",
+        "MS SQL"
       ]
     },
 
@@ -40,7 +43,9 @@ function Skills() {
         "Git",
         "GitHub",
         "VS Code",
-        "Jupyter Notebook"
+        "Jupyter Notebook",
+        "Postman",
+        "Docker"
       ]
     },
 
